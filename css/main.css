@@ -49,4 +49,5 @@ figure:last-child {
   transform: rotate(20deg);
   left: 25em;
   z-index: -1;
+  overflow: visible;
 }
