@@ -5,7 +5,6 @@ html {
 }
 
 .polaroid {
-  transform: rotate(-15deg);
   transition: all .2s linear;
   position: absolute;
   left: 12em;
@@ -39,10 +38,19 @@ html {
   z-index: 101;
 }
 
+figure:first-child {
+  transform: rotate(-15deg);
+  z-index: -1;
+}
+
 figure:nth-child(2) {
   transform: rotate(10deg);
   left: 18em;
   top: 11em;
+}
+
+figure:nth-child(2):hover {
+  box-shadow: 1px 1px 1px 1px #000;
 }
 
 figure:last-child {
