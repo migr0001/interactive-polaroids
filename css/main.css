@@ -10,6 +10,7 @@ html {
   left: 12em;
   top: 7em;
 
+
   margin: 0;
   padding: 10px;
   width: 250px;
@@ -38,24 +39,26 @@ html {
   z-index: 101;
 }
 
-figure:first-child {
+figure:nth-child(1) {
   transform: rotate(-15deg);
   z-index: -1;
+  top: 100px;
+  left: 20%;
 }
 
 figure:nth-child(2) {
   transform: rotate(10deg);
-  left: 18em;
-  top: 11em;
+  left: 30%;
+  top: 150px;
+}
+
+figure:nth-child(3) {
+  transform: rotate(20deg);
+  left: 40%;
+  top: 100px;
+  z-index: -1;
 }
 
 figure:nth-child(2):hover {
   box-shadow: 1px 1px 1px 1px #000;
-}
-
-figure:last-child {
-  transform: rotate(20deg);
-  left: 25em;
-  z-index: -1;
-  overflow: visible;
 }
